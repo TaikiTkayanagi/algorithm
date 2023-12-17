@@ -3,6 +3,7 @@ package algorithm;
 import algorithm.section3.BubbleSort;
 import algorithm.section3.CocktailSort;
 import algorithm.section3.CombSort;
+import algorithm.section3.SelectSort;
 
 public class Main {
     private static void showArray(String name, int[] target){
@@ -18,5 +19,6 @@ public class Main {
         showArray("BubbleSort", BubbleSort.exec2(target));
         showArray("CocktailSort", CocktailSort.exec1(target));
         showArray("CombSort", CombSort.exec1(target));
+        showArray("SelectSort", SelectSort.exec1(new int[]{2, 5, 1, 8, 7, 3}));
     }
 }
