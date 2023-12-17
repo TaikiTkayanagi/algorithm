@@ -1,5 +1,9 @@
 package algorithm.section3;
 
+/**
+ * バブルソートを行う
+ * バブルソートとは、外枠1回のループで最大値を一番後ろに持っていき、一番後ろの場所を1減らしていく
+ */
 public class BubbleSort {
     public static int[] exec(int[] target){
         var copyTarget = target.clone();
