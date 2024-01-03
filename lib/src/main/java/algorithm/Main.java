@@ -7,6 +7,7 @@ import algorithm.section3.CombSort;
 import algorithm.section3.GnomeSort;
 import algorithm.section3.InsertionSort;
 import algorithm.section3.SelectSort;
+import algorithm.section3.ShellSort;
 
 public class Main {
     private static void showArray(String name, int[] target){
@@ -27,5 +28,6 @@ public class Main {
         showArray("GnomeSort", GnomeSort.exec1(new int[]{2, 5, 1, 8, 7, 3}));
         showArray("InsertionSort", InsertionSort.exec1(new int[]{2, 5, 1, 8, 7, 3}));
         showArray("BucketSort", BucketSort.exec1(new int[]{1, 5, 28, 25, 100, 52, 27, 91, 22, 99}));
+        showArray("Shell Sort", ShellSort.exec1(new int[]{5,6,9,2,3}));
     }
 }
