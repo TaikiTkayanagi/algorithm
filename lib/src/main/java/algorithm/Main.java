@@ -1,6 +1,7 @@
 package algorithm;
 
 import algorithm.section3.BubbleSort;
+import algorithm.section3.BucketSort;
 import algorithm.section3.CocktailSort;
 import algorithm.section3.CombSort;
 import algorithm.section3.GnomeSort;
@@ -12,6 +13,7 @@ public class Main {
         System.out.println("algorithm:" + name);
         for(var value : target){
             System.out.print(value);
+            System.out.print(",");
         }
         System.out.println();
     }
@@ -24,5 +26,6 @@ public class Main {
         showArray("SelectSort", SelectSort.exec1(new int[]{2, 5, 1, 8, 7, 3}));
         showArray("GnomeSort", GnomeSort.exec1(new int[]{2, 5, 1, 8, 7, 3}));
         showArray("InsertionSort", InsertionSort.exec1(new int[]{2, 5, 1, 8, 7, 3}));
+        showArray("BucketSort", BucketSort.exec1(new int[]{1, 5, 28, 25, 100, 52, 27, 91, 22, 99}));
     }
 }
