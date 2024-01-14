@@ -7,6 +7,7 @@ import algorithm.section3.CombSort;
 import algorithm.section3.CountingSort;
 import algorithm.section3.GnomeSort;
 import algorithm.section3.InsertionSort;
+import algorithm.section3.QuickSort;
 import algorithm.section3.SelectSort;
 import algorithm.section3.ShellSort;
 
@@ -31,5 +32,7 @@ public class Main {
         showArray("BucketSort", BucketSort.exec1(new int[]{1, 5, 28, 25, 100, 52, 27, 91, 22, 99}));
         showArray("Shell Sort", ShellSort.exec1(new int[]{5,6,9,2,3}));
         showArray("Counting Sort", CountingSort.exec1(new int[]{4,3,6,2,3,4,7}));
+        showArray("Quick Sort", QuickSort.exec1(new int[]{1,8,3,9,4,5,7}));
+        showArray("Quick Sort", QuickSort.exec2(new int[]{1,8,3,9,4,5,7}));
     }
 }
